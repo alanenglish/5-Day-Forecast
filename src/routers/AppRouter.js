@@ -5,11 +5,13 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
+import Header from '../components/Header';
 import Home from '../components/Home';
 
 const AppRouter = () => (
   <Router>
     <div>
+      <Header />
       <Switch>
         <Route
           path="/"
