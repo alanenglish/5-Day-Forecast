@@ -6,7 +6,7 @@ import {
   Redirect
 } from 'react-router-dom';
 import Header from '../components/Header';
-import Home from '../components/Home';
+import Forecast from '../components/Forecast';
 
 const AppRouter = () => (
   <Router>
@@ -15,7 +15,7 @@ const AppRouter = () => (
       <Switch>
         <Route
           path="/"
-          component={Home}
+          component={Forecast}
           exact={true}
         />
         <Redirect to="/" />
