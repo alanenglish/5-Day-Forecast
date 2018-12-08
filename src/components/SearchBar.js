@@ -13,7 +13,6 @@ class SearchBar extends React.Component {
   onSubmitForecast = (event) => {
     event.preventDefault();
     this.props.fetchForecast(this.state.woeId);
-
     this.setState({ woeId: '' });
   }
 
@@ -23,7 +22,7 @@ class SearchBar extends React.Component {
         <span className="fa fa-search search-bar__icon"></span>
         <input
           className="search-bar__input"
-          type="text"
+          type="number"
           placeholder="Enter a WOE ID to display forecast for that location..."
           value={this.state.woeId}
           onChange={(e) => { this.setState({ woeId: e.target.value }); }}
