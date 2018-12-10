@@ -6,13 +6,13 @@
   .header-content {
     align-items: center;
     display: flex;
+    height: inherit;
     justify-content: space-between;
     padding: $s-size $xl-size;
-    height: inherit;
 
     .header-content__img {
-      font-size: 50px;
       color: white;
+      font-size: 50px;
     }
 
     .header-content__link {
@@ -22,17 +22,17 @@
       text-decoration: none;
       transition: color .5s ease;
       &:hover {
-        text-decoration: none;
         color: #5597ED;
+        text-decoration: none;
       }
     }
 
     .header-content__title {
       color: #5597ED;
       font-family: 'Monoton', cursive;
-      text-transform: uppercase;
       font-size: 210%;
       margin: 0;
+      text-transform: uppercase;
     }
   }
 

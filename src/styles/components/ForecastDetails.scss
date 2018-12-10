@@ -1,0 +1,82 @@
+.forecast-item {
+  background-color: #F1F1F1;
+  border-radius: 4px;
+  box-shadow: 0 6px 4px -4px #ADADAD;
+  height: 325px;
+  margin: 0px 10px;
+  text-align: center;
+  vertical-align:top;
+  width: 255px;
+
+  .forecast-item__date {
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px 0;
+  }
+
+  .forecast-item__img {
+    background-color: #B0CAEC;
+    height: 175px;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .forecast-item__description{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    height: 40px;
+    margin-top: 5px;
+    width: inherit;
+  }
+
+  .forecast-item__hi-low {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-left: 5px;
+    .hi-temp {
+      color: #BE4949;
+      margin-right: 5px;
+    }
+    .low-temp {
+      color: #5265E2;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .forecast-item {
+      height: 225px;
+      margin: 0px 5px;
+      width: 135px;
+      .forecast-item__date {
+        font-size: 20px;
+        margin: 5px 0;
+      }
+      .forecast-item__img {
+        height: 115px;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 18px;
+        height: 30px;
+        margin-top: 3px;
+      }
+      .forecast-item__hi-low {
+        font-size: 12px;
+        margin-left: 3px;
+        .hi-temp {
+          margin-right: 3px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    /* For mobile phones: */
+
+}

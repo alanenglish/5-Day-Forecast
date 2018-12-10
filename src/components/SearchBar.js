@@ -12,14 +12,18 @@ class SearchBar extends React.Component {
 
   onSubmitForecast = (event) => {
     event.preventDefault();
-    this.props.fetchForecast(this.state.woeId);
+
+    if (this.state.woeId !== '') {
+      this.props.fetchForecast(this.state.woeId);
+    }
+
     this.setState({ woeId: '' });
   }
 
   render() {
     return (
       <form className="search-bar" onSubmit={(event) => { this.onSubmitForecast(event); }} >
-        <span className="fa fa-search search-bar__icon"></span>
+        <span className="fa fa-search search-bar__icon" />
         <input
           className="search-bar__input"
           type="number"

@@ -1,0 +1,88 @@
+.forecast-container {
+  align-items: center;
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.empty-state__background-img {
+  background-image: url(/images/weather.jpg);
+  background-size: cover;
+}
+
+.empty-state {
+  text-align: center;
+
+  .empty_state__message {
+    font-family: 'Oswald';
+    font-size: 34px;
+  }
+
+  .empty-state__drake {
+    font-family: 'Yesteryear', cursive;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.location {
+  font-family: 'Oswald';
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.forecast-list {
+  margin-bottom: 75px;
+  margin-top: $xl-size;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .forecast-container {
+      height: 84vh;
+    }
+
+    .location {
+      font-size: 44px;
+    }
+
+    .forecast-list {
+      margin-bottom: 200px;
+      margin-top: $xl-size;
+    }
+
+    .empty-state {
+      .empty_state__message {
+        font-size: 26px;
+        padding: 0 $s-size;
+      }
+
+      .empty-state__drake {
+        font-size: 20px;
+      }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    /* For mobile phones: */
+    .forecast-container {
+      height: 89vh;
+    }
+
+    .location {
+      font-size: 32px;
+    }
+
+    .empty-state {
+      .empty_state__message {
+        font-size: 22px;
+        padding: 0 $s-size;
+      }
+
+      .empty-state__drake {
+        font-size: 18px;
+      }
+    }
+}

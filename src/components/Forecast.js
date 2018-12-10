@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { toast } from 'react-toastify';
-import SearchBar from './SearchBar';
+import ForecastDetails from './ForecastDetails';
 import Loading from './Loading';
+import SearchBar from './SearchBar';
 import fetchForecasts from '../utils/API';
-// import { forecastData } from '../utils/forecastData';
 
 class Forecast extends Component {
   constructor() {
@@ -11,6 +11,8 @@ class Forecast extends Component {
 
     this.state = {
       forecasts: [],
+      city: '',
+      state: '',
       error: '',
       isLoading: false
     };
@@ -24,35 +26,54 @@ class Forecast extends Component {
   async fetchWeatherForecast(woe) {
     this.setState({ error: '' });
     const response = await fetchForecasts(woe);
-    console.log('Response', response);
-    console.log('This line should not run until my response is resolved.');
-    // if (response.status !== 200) {
+
     if (response.detail) {
-      console.log('This line should ONLY run when I hit an error.');
       this.setState({
-        // error: response.error,
         error: 'Location not found, please enter a valid WOE ID.',
         isLoading: false
       });
     } else {
-      console.log('This line should run when I DO NOT hit an error.');
-      console.log('Consolidated Forecasts:', response.consolidated_weather.slice(0, 5));
-      // console.log('Consolidated Forecasts:', response.data.consolidated_weather.slice(0, 5))
       this.setState({
         forecasts: response.consolidated_weather.slice(0, 5),
-        // forecasts: response.data.consolidated_weather.slice(0, 5),
+        city: response.title,
+        state: response.parent.title,
         isLoading: false
       });
     }
   }
 
+  displayForecastItems = () => this.state.forecasts.map((forecast) => <ForecastDetails key={forecast.id} forecast={forecast} />);
+
   render() {
-    const { isLoading, error } = this.state;
+    const { isLoading, error, forecasts } = this.state;
     if (error) toast.error(error);
     return (
       <Fragment>
         <SearchBar fetchForecast={this.onSearchSubmit} />
-        { isLoading && <Loading /> }
+        { isLoading ?
+          <Loading />
+        :
+          <div className={`forecast-container ${!forecasts.length ? 'empty-state__background-img' : ''}`}>
+            { !this.state.forecasts.length &&
+              <div className="empty-state">
+                <p className="empty_state__message">
+                  Please enter a WOE ID in order to display forecast. Try running through the index for your WOE's.
+                </p>
+                <em className="empty-state__drake">-Drake</em>
+              </div>
+            }
+            { !!this.state.forecasts.length &&
+              <div>
+                <div className="location">
+                  {this.state.city}, {this.state.state}
+                </div>
+                <ul className="list-inline forecast-list">
+                  {this.displayForecastItems()}
+                </ul>
+              </div>
+            }
+          </div>
+        }
       </Fragment>
     );
   }
