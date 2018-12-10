@@ -19,7 +19,11 @@ class Forecast extends Component {
   }
 
   onSearchSubmit = (woe) => {
-    this.setState({ isLoading: true });
+    this.setState({
+      isLoading: true,
+      forecasts: []
+    });
+
     this.fetchWeatherForecast(woe);
   }
 
