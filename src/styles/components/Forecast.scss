@@ -65,6 +65,60 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .forecast-container {
+      height: 84vh;
+    }
+
+    .location {
+      font-size: 44px;
+    }
+
+    .forecast-list {
+      margin-bottom: 50px;
+      margin-top: $m-size;
+    }
+
+    .empty-state {
+      .empty_state__message {
+        font-size: 26px;
+        padding: 0 $s-size;
+      }
+
+      .empty-state__drake {
+        font-size: 20px;
+      }
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    /* For mobile phones: */
+    .forecast-container {
+      height: 84vh;
+    }
+
+    .location {
+      font-size: 34px;
+    }
+
+    .forecast-list {
+      margin-bottom: 20px;
+      margin-top: 0px;;
+    }
+
+    .empty-state {
+      .empty_state__message {
+        font-size: 26px;
+        padding: 0 $s-size;
+      }
+
+      .empty-state__drake {
+        font-size: 20px;
+      }
+    }
+}
+
 @media only screen and (max-width: 370px) {
     /* For mobile phones: */
     .forecast-container {

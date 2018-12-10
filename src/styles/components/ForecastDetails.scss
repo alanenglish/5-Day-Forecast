@@ -46,6 +46,186 @@
   }
 }
 
+@media only screen and (max-width: 1354px) {
+    /* For mobile phones: */
+    .forecast-item {
+      height: 300px;
+      margin: 0px 5px;
+      width: 230px;
+      .forecast-item__date {
+        font-size: 24px;
+        margin: 5px 0;
+      }
+      .forecast-item__img {
+        height: 165px;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 22px;
+        height: 40px;
+        margin-top: 5px;
+      }
+      .forecast-item__hi-low {
+        font-size: 16px;
+        margin-left: 5px;
+        .hi-temp {
+          margin-right: 5px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    /* For mobile phones: */
+    .forecast-item {
+      height: 275px;
+      margin: 0px 5px;
+      width: 215px;
+      .forecast-item__date {
+        font-size: 24px;
+        margin: 5px 0;
+      }
+      .forecast-item__img {
+        height: 155px;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 22px;
+        height: 36px;
+        margin-top: 3px;
+      }
+      .forecast-item__hi-low {
+        font-size: 14px;
+        margin-left: 3px;
+        .hi-temp {
+          margin-right: 3px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    /* For mobile phones: */
+    .forecast-item {
+      height: 245px;
+      margin: 0px 5px;
+      width: 200px;
+      .forecast-item__date {
+        font-size: 22px;
+        margin: 5px 0;
+      }
+      .forecast-item__img {
+        height: 135px;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 20px;
+        height: 34px;
+        margin-top: 3px;
+      }
+      .forecast-item__hi-low {
+        font-size: 14px;
+        margin-left: 3px;
+        .hi-temp {
+          margin-right: 3px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 1051px) {
+    /* For mobile phones: */
+    .forecast-item {
+      height: 235px;
+      margin: 0px 5px;
+      width: 175px;
+      .forecast-item__date {
+        font-size: 22px;
+        margin: 5px 0;
+      }
+      .forecast-item__img {
+        height: 125px;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 20px;
+        height: 34px;
+        margin-top: 3px;
+      }
+      .forecast-item__hi-low {
+        font-size: 14px;
+        margin-left: 3px;
+        .hi-temp {
+          margin-right: 3px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 925px) {
+    /* For mobile phones: */
+    .forecast-item {
+      height: 235px;
+      margin: 0px 5px;
+      width: 155px;
+      .forecast-item__date {
+        font-size: 22px;
+        margin: 5px 0;
+      }
+      .forecast-item__img {
+        height: 125px;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 20px;
+        height: 34px;
+        margin-top: 3px;
+      }
+      .forecast-item__hi-low {
+        font-size: 14px;
+        margin-left: 3px;
+        .hi-temp {
+          margin-right: 3px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    /* For mobile phones: */
+    .forecast-item {
+      height: 225px;
+      margin: 0px 5px;
+      width: 140px;
+      .forecast-item__date {
+        font-size: 22px;
+        margin: 5px 0;
+      }
+      .forecast-item__img {
+        height: 115px;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 20px;
+        height: 34px;
+        margin-top: 3px;
+      }
+      .forecast-item__hi-low {
+        font-size: 14px;
+        margin-left: 3px;
+        .hi-temp {
+          margin-right: 3px;
+        }
+      }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .forecast-item {
@@ -76,7 +256,62 @@
     }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 725px) {
     /* For mobile phones: */
+    .forecast-item {
+      height: 225px;
+      margin: 5px 5px;
+      width: 135px;
+      .forecast-item__date {
+        font-size: 20px;
+        margin: 5px 0;
+      }
+      .forecast-item__img {
+        height: 115px;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 18px;
+        height: 30px;
+        margin-top: 3px;
+      }
+      .forecast-item__hi-low {
+        font-size: 12px;
+        margin-left: 3px;
+        .hi-temp {
+          margin-right: 3px;
+        }
+      }
+    }
+}
 
+@media only screen and (max-width: 290px) {
+    /* For mobile phones: */
+    .forecast-item {
+      height: 175px;
+      margin: 3px 3px;
+      width: 135px;
+      .forecast-item__date {
+        font-size: 14px;
+        margin: 3px 0;
+      }
+      .forecast-item__img {
+        height: 100px;
+        margin-top: 3px;
+        width: 100%;
+      }
+      .forecast-item__description {
+        font-size: 14px;
+        height: 20px;
+        margin-top: 3px;
+      }
+      .forecast-item__hi-low {
+        font-size: 12px;
+        margin-left: 3px;
+        .hi-temp {
+          margin-right: 3px;
+        }
+      }
+    }
 }
