@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseList with expenses 1`] = `
+<li
+  className="list-inline-item forecast-item"
+>
+  <div
+    className="forecast-item__date"
+  >
+    Saturday
+  </div>
+  <img
+    alt="Light Rain"
+    className="forecast-item__img"
+    src="https://www.metaweather.com/static/img/weather/lr.svg"
+  />
+  <div
+    className="forecast-item__description"
+  >
+    Light Rain
+  </div>
+  <div
+    className="forecast-item__hi-low"
+  >
+    Hi: 
+    <span
+      className="hi-temp"
+    >
+      54
+    </span>
+    Low: 
+    <span
+      className="low-temp"
+    >
+      46
+    </span>
+  </div>
+</li>
+`;

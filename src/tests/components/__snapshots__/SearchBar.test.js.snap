@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render SearchBar correctly 1`] = `
+<form
+  className="search-bar"
+  onSubmit={[Function]}
+>
+  <span
+    className="fa fa-search search-bar__icon"
+  />
+  <input
+    autoFocus={true}
+    className="search-bar__input"
+    onChange={[Function]}
+    placeholder="provide a WOE ID and press enter to display forecast for that location..."
+    type="number"
+    value=""
+  />
+</form>
+`;

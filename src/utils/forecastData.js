@@ -83,4 +83,4 @@ export const forecastData = [
     visibility: 13.92120019088523,
     predictability: 73
   }
-]
+];

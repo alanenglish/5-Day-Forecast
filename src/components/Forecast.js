@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import { toast } from 'react-toastify';
 import ForecastDetails from './ForecastDetails';
 import Loading from './Loading';
 import SearchBar from './SearchBar';
 import fetchForecasts from '../utils/API';
 
-class Forecast extends Component {
+class Forecast extends React.Component {
   constructor() {
     super();
 
@@ -18,7 +18,7 @@ class Forecast extends Component {
     };
   }
 
-  onSearchSubmit = (woe) => {
+  onSubmit = (woe) => {
     this.setState({
       isLoading: true,
       forecasts: []
@@ -52,8 +52,8 @@ class Forecast extends Component {
     const { isLoading, error, forecasts } = this.state;
     if (error) toast.error(error);
     return (
-      <Fragment>
-        <SearchBar fetchForecast={this.onSearchSubmit} />
+      <div>
+        <SearchBar onSubmit={this.onSubmit} />
         { isLoading ?
           <Loading />
         :
@@ -78,7 +78,7 @@ class Forecast extends Component {
             }
           </div>
         }
-      </Fragment>
+      </div>
     );
   }
 }

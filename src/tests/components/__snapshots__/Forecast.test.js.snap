@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Forecast component correctly forecasts are present 1`] = `
+<div>
+  <SearchBar
+    onSubmit={[Function]}
+  />
+  <div
+    className="forecast-container "
+  >
+    <div>
+      <div
+        className="location"
+      >
+        London
+        , 
+        England
+      </div>
+      <ul
+        className="list-inline forecast-list"
+      >
+        <ForecastDetails
+          forecast={
+            Object {
+              "air_pressure": 1006.64,
+              "applicable_date": "2018-12-08",
+              "humidity": 74,
+              "id": 5120283761442816,
+              "max_temp": 12.5,
+              "min_temp": 7.9325,
+              "predictability": 75,
+              "the_temp": 11.445,
+              "visibility": 8.360549391553329,
+              "weather_state_abbr": "lr",
+              "weather_state_name": "Light Rain",
+              "wind_direction": 250.87525299232726,
+              "wind_direction_compass": "WSW",
+              "wind_speed": 14.321992441891355,
+            }
+          }
+          key="5120283761442816"
+        />
+        <ForecastDetails
+          forecast={
+            Object {
+              "air_pressure": 1011.5699999999999,
+              "applicable_date": "2018-12-09",
+              "created": "2018-12-08T14:56:02.768346Z",
+              "humidity": 76,
+              "id": 6511039873024000,
+              "max_temp": 10.1225,
+              "min_temp": 6.16,
+              "predictability": 73,
+              "the_temp": 9.684999999999999,
+              "visibility": 10.846034160502665,
+              "weather_state_abbr": "s",
+              "weather_state_name": "Showers",
+              "wind_direction": 303.5076993839963,
+              "wind_direction_compass": "WNW",
+              "wind_speed": 11.841569394687028,
+            }
+          }
+          key="6511039873024000"
+        />
+        <ForecastDetails
+          forecast={
+            Object {
+              "air_pressure": 1029.7,
+              "applicable_date": "2018-12-10",
+              "created": "2018-12-08T14:56:02.850056Z",
+              "humidity": 79,
+              "id": 5976522334666752,
+              "max_temp": 8.3075,
+              "min_temp": 4.395,
+              "predictability": 71,
+              "the_temp": 8.235,
+              "visibility": 12.329868567565418,
+              "weather_state_abbr": "hc",
+              "weather_state_name": "Heavy Cloud",
+              "wind_direction": 290.1214136959148,
+              "wind_direction_compass": "WNW",
+              "wind_speed": 6.999857623568361,
+            }
+          }
+          key="5976522334666752"
+        />
+        <ForecastDetails
+          forecast={
+            Object {
+              "air_pressure": 1025.9299999999998,
+              "applicable_date": "2018-12-11",
+              "created": "2018-12-08T14:56:02.951337Z",
+              "humidity": 90,
+              "id": 6033439778144256,
+              "max_temp": 10.2125,
+              "min_temp": 5.1,
+              "predictability": 73,
+              "the_temp": 8.95,
+              "visibility": 11.759139127495427,
+              "weather_state_abbr": "s",
+              "weather_state_name": "Showers",
+              "wind_direction": 171.65388231522883,
+              "wind_direction_compass": "S",
+              "wind_speed": 4.6199723653424005,
+            }
+          }
+          key="6033439778144256"
+        />
+        <ForecastDetails
+          forecast={
+            Object {
+              "air_pressure": 1020.015,
+              "applicable_date": "2018-12-12",
+              "created": "2018-12-08T14:56:03.048969Z",
+              "humidity": 81,
+              "id": 6529841964777472,
+              "max_temp": 8.8775,
+              "min_temp": 6.0175,
+              "predictability": 73,
+              "the_temp": 8.815000000000001,
+              "visibility": 13.92120019088523,
+              "weather_state_abbr": "s",
+              "weather_state_name": "Showers",
+              "wind_direction": 204.10530880492453,
+              "wind_direction_compass": "SSW",
+              "wind_speed": 5.574268742977015,
+            }
+          }
+          key="6529841964777472"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render Forecast component correctly when no forecasts present 1`] = `
+<div>
+  <SearchBar
+    onSubmit={[Function]}
+  />
+  <div
+    className="forecast-container empty-state__background-img"
+  >
+    <div
+      className="empty-state"
+    >
+      <p
+        className="empty_state__message"
+      >
+        Please enter a WOE ID in order to display forecast. Try running through the index for your WOE's.
+      </p>
+      <em
+        className="empty-state__drake"
+      >
+        -Drake
+      </em>
+    </div>
+  </div>
+</div>
+`;
