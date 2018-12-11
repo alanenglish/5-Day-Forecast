@@ -31,16 +31,16 @@ class Forecast extends React.Component {
     this.setState({ error: '' });
     const response = await fetchForecasts(woe);
 
-    if (response.detail) {
+    if (response.status !== 200) {
       this.setState({
-        error: 'Location not found, please enter a valid WOE ID.',
+        error: response.error,
         isLoading: false
       });
     } else {
       this.setState({
-        forecasts: response.consolidated_weather.slice(0, 5),
-        city: response.title,
-        state: response.parent.title,
+        forecasts: response.data.consolidated_weather.slice(0, 5),
+        city: response.data.title,
+        state: response.data.parent.title,
         isLoading: false
       });
     }

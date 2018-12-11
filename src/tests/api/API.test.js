@@ -20,7 +20,7 @@ describe('API', () => {
       const woeId = '44418';
       const forecasts = await fetchForecasts(woeId);
 
-      expect(global.fetch).toHaveBeenCalledWith(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeId}`);
+      expect(global.fetch).toHaveBeenCalledWith(`/api/${woeId}`);
       expect(forecasts).toEqual({ consolidated_weather: forecastData });
     });
   });

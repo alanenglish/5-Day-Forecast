@@ -2,4 +2,4 @@
 
 ## Launch Application:
 
-`yarn build:prod` => `yarn start`
+`yarn build:prod` => `yarn start` => localhost:3000

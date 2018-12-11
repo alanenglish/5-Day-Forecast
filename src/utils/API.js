@@ -1,9 +1,9 @@
-// const EXPRESS_PROXY_SERVER_URL = '/api';
+const EXPRESS_PROXY_SERVER_URL = '/api';
 
-// export default async function fetchForecasts(woe) {
-//   const response = await fetch(`${EXPRESS_PROXY_SERVER_URL}/${woe}`);
-//   return await response.json();
-// }
+export default async function fetchForecasts(woe) {
+  const response = await fetch(`${EXPRESS_PROXY_SERVER_URL}/${woe}`);
+  return await response.json();
+}
 
 // function for build:dev and yarn start (express server proxy)
 // async fetchWeatherForecast(woe) {
@@ -18,20 +18,20 @@
 //   } else {
 //     this.setState({
 //       forecasts: response.data.consolidated_weather.slice(0, 5),
-//       city: response.data.title
-//       state: resonse.data.parent.title
+//       city: response.data.title,
+//       state: response.data.parent.title,
 //       isLoading: false
 //     });
 //   }
 // }
 
-const PROXY_URL = 'https://cors-anywhere.herokuapp.com';
-const FORECASTS_URL = 'https://www.metaweather.com/api/location';
-
-export default async function fetchForecasts(woe) {
-  const response = await fetch(`${PROXY_URL}/${FORECASTS_URL}/${woe}`);
-  return await response.json();
-}
+// const PROXY_URL = 'https://cors-anywhere.herokuapp.com';
+// const FORECASTS_URL = 'https://www.metaweather.com/api/location';
+//
+// export default async function fetchForecasts(woe) {
+//   const response = await fetch(`${PROXY_URL}/${FORECASTS_URL}/${woe}`);
+//   return await response.json();
+// }
 
 // function for webpack dev-server (heroku proxy)
 // async fetchWeatherForecast(woe) {
