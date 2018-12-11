@@ -27,7 +27,7 @@ class SearchBar extends React.Component {
         <input
           className="search-bar__input"
           type="number"
-          placeholder="provide a WOE ID and press enter to display forecast for that location..."
+          placeholder="provide a WOE ID and press enter..."
           value={this.state.woeId}
           onChange={(e) => { this.setState({ woeId: e.target.value }); }}
           autoFocus

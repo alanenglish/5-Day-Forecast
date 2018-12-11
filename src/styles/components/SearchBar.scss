@@ -10,10 +10,11 @@
   .search-bar__input {
     border: 2px solid white;
     border-radius: 5rem;
-    height: 40%;
+    height: 35%;
     margin-left: 5px;
     padding-left: 10px;
-    width: 60%;
+    margin-right: 40px;
+    width: 40%;
     &::placeholder {
       font-style: italic;
     }
@@ -36,7 +37,11 @@
 
     .search-bar__input {
       height: 60%;
-      width: 80%;
+      width: 65%;
+      margin-right: 20px;
+      &::placeholder {
+        font-size: 80%;
+      }
     }
   }
 }
