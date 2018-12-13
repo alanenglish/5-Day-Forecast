@@ -9,7 +9,7 @@ test('should render Forecast component correctly when no forecasts present', () 
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should render Forecast component correctly forecasts are present', () => {
+test('should render Forecast component correctly when forecasts are present', () => {
   const wrapper = shallow(<Forecast />);
   wrapper.setState({
     forecasts: forecastData,

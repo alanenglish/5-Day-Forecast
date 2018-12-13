@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static(publicPath));
 
+// create Proxy as work-around from being blocked by CORS Policy
 app.get('/api/:woe', (req, response) => {
   const URL = `https://www.metaweather.com/api/location/${req.params.woe}`;
 
